@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F8FAFC">
+  <meta name="description" content="Explore web applications, WordPress stores, and landing pages by Sara Hossam Dahb.">
+  <title>Projects — Sara Hossam Dahb</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="container nav-bar" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Sara Hossam Dahb home"><span class="brand-mark">SD</span><span>Sara Hossam Dahb</span></a>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="nav-links" id="primary-navigation" data-nav-links><a class="nav-link" data-page-link="home" href="index.html">Home</a><a class="nav-link" data-page-link="projects" href="projects.html">Projects</a><a class="nav-link" data-page-link="about" href="about.html">About</a><a class="nav-link" data-page-link="gallery" href="gallery.html">Gallery</a><a class="nav-link" data-page-link="contact" href="contact.html">Contact</a><a class="btn btn-primary nav-cta" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a></div>
+  </nav></header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container reveal"><p class="eyebrow">Portfolio</p><h1>Selected projects<span class="accent">.</span></h1><p>A collection of web applications, e-commerce work, and landing pages. Select a project to see its role, approach, and technology.</p></div></section>
+    <section class="section-soft" style="padding-block: 34px 78px">
+      <div class="container">
+        <div class="section-top reveal"><div><h2 class="section-heading">Work across the web</h2><p class="section-intro">Filter by project type to find what you're looking for.</p></div><span class="project-count" data-project-count aria-live="polite">08 projects</span></div>
+        <div class="filter-list reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" type="button" data-project-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-project-filter="fullstack" aria-pressed="false">Full-Stack &amp; Web Apps</button>
+          <button class="filter-btn" type="button" data-project-filter="wordpress" aria-pressed="false">WordPress &amp; E-Commerce</button>
+          <button class="filter-btn" type="button" data-project-filter="landing" aria-pressed="false">Landing Pages</button>
+        </div>
+        <div class="project-grid" data-project-grid="all"></div>
+        <div class="card cta-panel reveal" style="margin-top: 40px">
+          <div><p class="eyebrow">Something in mind?</p><h2>Let's talk about your project.</h2><p>I'm happy to hear what you're building.</p></div>
+          <a class="btn btn-primary" href="contact.html">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" data-project-modal hidden role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <section class="modal-card">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close project details">×</button>
+      <p class="eyebrow" data-modal-category></p>
+      <h2 id="modal-title" data-modal-title></h2>
+      <p id="modal-description" data-modal-description></p>
+      <div class="modal-meta"><h3>Role</h3><p data-modal-role></p></div>
+      <div class="modal-meta"><h3>Technology</h3><div class="skill-tags" data-modal-stack></div></div>
+      <div class="project-image-gallery" data-project-images hidden>
+        <div class="project-image-heading"><h3>Project images</h3><span data-project-image-counter></span></div>
+        <div class="project-image-stage"><button class="image-arrow" type="button" data-project-image-prev aria-label="Previous project image">‹</button><img data-project-image alt=""><button class="image-arrow" type="button" data-project-image-next aria-label="Next project image">›</button></div>
+        <p class="project-image-caption" data-project-image-caption></p>
+        <div class="project-thumbnails" data-project-thumbnails aria-label="Project image thumbnails"></div>
+      </div>
+    </section>
+  </div>
+  <footer class="site-footer"><div class="container footer-row"><a class="footer-brand" href="index.html">Sara Hossam Dahb<span class="accent">.</span></a><span>Designed with care. © <span data-year></span> Sara Hossam Dahb</span><a href="Portfolio.pdf" download="Sara-Hossam-Dahb-Portfolio.pdf">Download portfolio PDF ↓</a></div></footer>
+</body>
+</html>
